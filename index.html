@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Personal Website Progression - CSE 134B hw2" />
+    <meta name="author" content="Mialyssa Gomez" />
+
+    <title> Mialyssa (assignment 2 edition) </title>
+    
+    <link href="images/favicon.ico" rel="icon" />
+    <link href="styles/main.css" rel="stylesheet" />
+
+    <style>
+        skills-card { display: block; border: 2px solid;}
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h1>My Name</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="introduction"></section>
+            <h2>Welcome to My Portfolio</h2>
+            <p>This is a showcase of my work and achievements. Feel free to explore the different sections to learn more about me and my projects.</p>
+            <ul>
+                <li><a href="https://github.com/mialyssa" target="_blank" rel="noopener"> GitHub </a></li>
+                <li><a href="https://www.linkedin.com/in/mialyssagomez/" target="_blank" rel="noopener"> LinkedIn </a></li>
+                <li><a href="mailto:mialyssagomez@gmail.com"> Email </a></li>
+            </ul>
+            <button type="button" onclick="window.location.href='projects.html'">View Projects</button>
+        </section>
+
+        <section id="aboutme">
+            <h2>About Me</h2>
+            <p>Hello! this is a section where I do a quick introduction of myself, my interests, and what I do on my free time.
+                And then I include an easily accessible link to the <a href="about.html"> About Me </a> page for more details. 
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+
+            <skills-card data-skilltype="languages">
+                <h2>Languages</h2>
+                    <p> ie &rpar; Java Python C/C++ HTML/CSS/JS (soon &trade;) etc. in blocked/grid format within section</p>
+            </skills-card>
+
+            <skills-card data-skilltype="frameworks">
+                <h2>Frameworks</h2>
+                    <p> insert frameworks in blocked/grid format within section</p>
+            </skills-card>
+
+            <skills-card data-skilltype="tools">
+                <h2>Tools</h2>
+                    <p> insert tools in blocked/grid format within section</p>
+            </skills-card>
+            
+        </section>
+
+        
+
+
+
+    </main>
+
+    <footer>
+        <hr>
+        <section id="socials">
+            <h3>Connections:</h3>
+            <ul>
+                <li> <a href="https://www.linkedin.com/in/mialyssagomez/" target="_blank" rel="noopener"> LinkedIn </a> </li>
+                <li> <a href="https://www.github.com/mialyssa/" target="_blank" rel="noopener"> Github </a> </li>
+            </ul>
+        </section>
+        <p> &copy; 2025 Mialyssa</p>
+    </footer>
+
+
+</body>
+
+
+
+</html>
