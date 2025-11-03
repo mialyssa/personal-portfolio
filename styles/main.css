@@ -1,0 +1,98 @@
+:root {
+    --bkgd: #e1ded5;
+    --header: #c7c4be;
+    --text: #5b5243;
+    --primary: #98b785;
+    --secondary: #cfd9c9;
+    --blue: #97bcc4;
+}
+
+html[data-theme="dark"] {
+    --bkgd: #2d241a;
+    --text: #bcb3a4;
+    --primary: #5b7a48;
+    --secondary: #2c3626;
+    --blue: #3b6068;
+}
+
+* {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bkgd);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 0 1rem;
+    background-color: var(--header);
+}
+
+main {
+    min-block-size: calc(100% - 300px);
+    padding: 1rem;
+    margin: 0 20%;
+}
+
+skills-card { 
+    display: block; 
+    border: 2px solid;
+}
+
+
+/* @media(min-width: 768px) {
+    main {
+        min-block-size:calc(100% - 330px);
+    }
+}
+
+@media(min-width: 1100px) {
+    main {
+        min-block-size:calc(100% - 350px);
+    }
+}
+
+@media(min-width: 1200px) {
+    main {
+        min-block-size:calc(100% - 360px);
+    }
+}
+
+@media(min-width: 1400px) {
+    main {
+        min-block-size:calc(100% - 370px);
+    }
+}
+
+@media(min-width: 1440px) {
+    main {
+        min-block-size:calc(100% - 350px);
+    }
+}
+
+@media(min-width: 1500px) {
+    main {
+        min-block-size:calc(100% - 380px);
+    }
+}
+
+@media(min-width: 1600px) {
+    main {
+        min-block-size:calc(100% - 410px);
+    }
+} */
+
