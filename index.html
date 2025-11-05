@@ -26,7 +26,7 @@
 
     <main>
 
-        <section id="introduction"></section>
+        <section class="introduction"></section>
             <h2>Welcome to My Portfolio</h2>
             <p>This is a showcase of my work and achievements. Feel free to explore the different sections to learn more about me and my projects.</p>
             <ul>
@@ -38,30 +38,50 @@
         </section>
 
 
-        <section id="aboutme">
+        <section class="aboutme">
             <h2>About Me</h2>
             <article> Hello! this is a section where I do a quick introduction of myself, my interests, and what I do on my free time.
                 And then I include an easily accessible link to the <a href="about.html"> About Me </a> page for more details. 
             </article>
         </section>
 
-
-        <section id="skills">
-            <h2>Technical Skills</h2>
+        <h2>Technical Skills</h2>
+        <section class="skills">
 
             <skills-card data-skilltype="languages">
                 <h3>Languages</h3>
-                    <p> ie &rpar; Java Python C/C++ HTML/CSS/JS (soon &trade;) etc. in blocked/grid format within section</p>
+                <span class="skills-list">
+                    <p> Python </p>
+                    <p> Java </p>
+                    <p> C/C++ </p>
+                    <p> HTML/CSS(soon &trade;)</p>
+                    <p> JavaScript(soon &trade;)</p>
+                    <p> Bash </p>      
+                </span>              
             </skills-card>
 
-            <skills-card data-skilltype="frameworks">
-                <h3>Frameworks</h3>
-                    <p> insert frameworks in blocked/grid format within section</p>
+            <skills-card data-skilltype="software">
+                <h3>Software Tools</h3>
+                <span class="skills-list">
+                    <p> VSCode</p>
+                    <p> Arduino </p>
+                    <p> RaspberryPi OS </p>
+                    <p> Git/GitHub </p>
+                    <p> Linux/Unix </p>
+                    <p> Visual Studio </p>
+                </span>
             </skills-card>
 
-            <skills-card data-skilltype="tools">
-                <h3>Tools</h3>
-                    <p> insert tools in blocked/grid format within section</p>
+            <skills-card data-skilltype="hardware">
+                <h3>Hardware Design</h3>
+                <span class="skills-list">
+                    <p> KiCad </p>
+                    <p> ModelSim </p>
+                    <p> Intel Quartus </p>
+                    <p> PSpice </p>
+                    <p> JSON </p>
+                    <p> JSON </p>
+                </span>
             </skills-card>
             
         </section>
@@ -75,7 +95,7 @@
     
     <footer>
         <hr>
-        <section id="socials">
+        <section class="socials">
             <h3>Connections:</h3>
             <ul>
                 <li> <a href="https://www.linkedin.com/in/mialyssagomez/" target="_blank" rel="noopener"> LinkedIn </a> </li>
