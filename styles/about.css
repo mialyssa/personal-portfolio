@@ -1,1 +1,118 @@
+@import "main.css";
+
+.content{
+    display: grid;
+    grid-template-columns: 20rem;
+    grid-template-areas: "aside main";
+
+    margin: 3rem;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+
+}
+aside > img {
+    align-self: center;
+}
+aside > .sm-icons {
+    display: flex;
+
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+.profile {
+    align-self: center;
+    
+}
+.profile > img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+profile-lines {
+    display: grid;
+    grid-template-columns: 1fr 2fr auto;
+    column-gap: 8px;
+    align-items: start;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0 0 0;
+
+}
+profile-lines .attribute {
+    text-align: center;
+    background-color: var(--accent);
+    border-radius: 7px;
+    padding: 0.25rem 0.75rem;
+    white-space: nowrap;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+}
+.details {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+/* @media (min-width: 768px) {
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+} */
+
+skills-card h3 {
+    -font-size: clamp(1rem, 2vw, 1.2rem);
+    display: block;
+    text-align: center;
+    background-color: var(--header);
+    padding: 0.5rem;
+    margin: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    background-clip: padding-box;
+}
+
+skills-card .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.4rem 0.6rem;
+    margin: 0.5rem 0rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    -font-size: clamp(0.8rem, 1.8vw, 1rem);
+}
+
+skills-card .skills-list p {
+    background-color: var(--header);
+    border-radius: 7px;
+    padding: 0.25rem 0.75rem;
+    margin: 0;
+    white-space: nowrap;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+}
+
+
+
 

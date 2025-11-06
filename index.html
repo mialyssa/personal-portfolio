@@ -15,9 +15,12 @@
 
 <body>
     <header>
-        <h1>Mialyssa</h1>
+        <a href="index.html" class="home">
+            <img src="assets/star-img.png" alt="Star Icon" class="star-icon">
+            <h1>Mialyssa</h1>
+        </a>
+
         <nav>
-            <a href="index.html">Home</a>
             <a href="about.html">About Me</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
@@ -26,14 +29,22 @@
 
     <main>
 
-        <section class="introduction"></section>
+        <section class="introduction">
             <h2>Welcome to My Portfolio</h2>
             <p>This is a showcase of my work and achievements. Feel free to explore the different sections to learn more about me and my projects.</p>
-            <ul>
-                <li><a href="https://github.com/mialyssa" target="_blank" rel="noopener"> GitHub </a></li>
-                <li><a href="https://www.linkedin.com/in/mialyssagomez/" target="_blank" rel="noopener"> LinkedIn </a></li>
-                <li><a href="mailto:mialyssagomez@gmail.com"> Email </a></li>
-            </ul>
+            
+            <div class="sm-icons">
+                <a href="https://www.linkedin.com/in/mialyssagomez/">
+                    <span class="sm-icon"> <img src="https://dummyimage.com/24x24/000/fff" alt="LinkedIn Icon"> </span>
+                </a>
+                <a href="https://www.github.com/mialyssa">
+                    <span class="sm-icon"> <img src="https://dummyimage.com/24x24/000/fff" alt="Github Icon"> </span>
+                </a>
+                <a href="https://codepen.io/mialyssa">
+                    <span class="sm-icon"> <img src="https://dummyimage.com/24x24/000/fff" alt="CodePen Icon"> </span>
+                </a>
+            </div>
+
             <button type="button" onclick="window.location.href='projects.html'">View Projects</button>
         </section>
 
@@ -54,9 +65,10 @@
                     <p> Python </p>
                     <p> Java </p>
                     <p> C/C++ </p>
-                    <p> HTML/CSS(soon &trade;)</p>
-                    <p> JavaScript(soon &trade;)</p>
-                    <p> Bash </p>      
+                    <p> Bash </p> 
+                    <p> HTML/CSS (soon&trade;)</p>
+                    <p> JavaScript (soon&trade;)</p>
+                         
                 </span>              
             </skills-card>
 
@@ -66,8 +78,8 @@
                     <p> VSCode</p>
                     <p> Arduino </p>
                     <p> RaspberryPi OS </p>
-                    <p> Git/GitHub </p>
-                    <p> Linux/Unix </p>
+                    <p> GitHub </p>
+                    <p> Linux </p>
                     <p> Visual Studio </p>
                 </span>
             </skills-card>

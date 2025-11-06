@@ -4,7 +4,13 @@
     --text: #5b5243;
     --primary: #98b785;
     --secondary: #cfd9c9;
-    --blue: #97bcc4;
+    --accent: #97bcc4;
+
+    --dark-bkgd: #2d241a;
+    --dark-text: #bcb3a4;
+    --dark-primary: #5b7a48;
+    --dark-secondary: #2c3626;
+    --dark-accent: #3b6068;
 }
 
 html[data-theme="dark"] {
@@ -40,23 +46,80 @@ header {
     top: 0;
     padding: 1rem 2rem;
     background-color: var(--header);
-
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
+
+header > .home > img {
+    height: 50px;
+    width: auto;
+    max-width: 20vw;
+}
+
+header > a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+header > nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: var(--text);
+    -font-size: 1.1rem;
+}
+header > nav a:hover, header > a:hover {
+    color: var(--dark-bkgd);
+    font-weight: bold;
+}
+
+footer {
+    display: grid;
+    text-align: space-between;
+    padding: 1rem;
+    background-color: var(--header);
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
 
 main {
     min-block-size: calc(100% - 300px);
     padding: 1rem;
     width: calc(100% - 30px);
+    max-width: 70vw;
+    align-self: center;
+    margin: auto;
+}
+
+.introduction, .aboutme {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    
+    border: 1px solid white;
+    border-radius: 8px;
+    overflow: hidden;
+    
+    background-color: rgba(255, 255, 255, 0.4);
+    -font-size: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+
 }
 
 
 .skills {
-  display: grid;
+  display: flex;
   gap: 1rem;
   padding: 1rem;
   box-sizing: border-box;
-  font-size: 1rem;
+  -font-size: 1rem;
 }
 
 skills-card {
@@ -65,9 +128,9 @@ skills-card {
     border: 1px solid white;
     border-radius: 8px;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-    font-size: 1rem;
+    -font-size: 1rem;
     width: 100%;
     box-sizing: border-box;
 }
@@ -79,7 +142,7 @@ skills-card {
 } */
 
 skills-card h3 {
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    -font-size: clamp(1rem, 2vw, 1.2rem);
     display: block;
     text-align: center;
     background-color: var(--header);
@@ -98,7 +161,7 @@ skills-card .skills-list {
     margin: 0.5rem 0rem;
     padding: 0.5rem;
     box-sizing: border-box;
-    font-size: clamp(0.8rem, 1.8vw, 1rem);
+    -font-size: clamp(0.8rem, 1.8vw, 1rem);
 }
 
 skills-card .skills-list p {
@@ -112,13 +175,13 @@ skills-card .skills-list p {
 }
 
 
-/* @media(min-width: 768px) {
-    main {
-        min-block-size:calc(100% - 330px);
+@media(max-width: 400px) {
+    body {
+        font-size: 3rem;
     }
 }
 
-@media(min-width: 1100px) {
+/*@media(min-width: 1100px) {
     main {
         min-block-size:calc(100% - 350px);
     }
@@ -155,10 +218,6 @@ skills-card .skills-list p {
 } */
 
 
-aside {
-    
-}
-
 
 /* Projects Page */
 
@@ -170,7 +229,7 @@ project-card {
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.15);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-    font-size: 1rem;
+    -font-size: 1rem;
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 1rem;
